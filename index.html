@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Grocery Shoppy an Ecommerce cate</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="topbar">
+        <p>Grocery Offer Zone Top Deals & Discounts</p>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <div class="brandname">
+                <span> <a href=""><span class="cap">G</span></a><a href=""><span class="small">rocery</span></a><a
+                        href=""><span class="cap"> S</span></a><a href=""><span class="small">hoppy</a></span></span>
+
+            </div>
+            <div class="logoimg"><img src="logo2.png" alt=""></div>
+        </div>
+        <div class="navmenu">
+            <div class="navoption">
+                <ul><a href="">
+                        <span class="fa fa-map-marker icon"><span class="menuname">Shop Locator</span>
+                        </span>
+                        <span class="fa fa-truck icon"><span class="menuname">Track Order</span>
+                        </span>
+                        <span class="fa fa-phone icon"><span class="menuname"> 001 234 5678</span>
+                        </span>
+                        <span class="fa fa-unlock-alt icon"><span class="menuname">Sign In</span>
+                        </span>
+                        <span class="fa fa-pencil-square-o icon"><span class="menuname">Sign Up</span>
+                        </span>
+
+                    </a>
+                </ul>
+            </div>
+            <div class="search">
+                <ul>
+                    <li>
+                        <input type="search" placeholder="How can We help you today?">
+                        <button type="submit" class="searchbtn"><span class="fa fa-search searchlogo"></span></button>
+                    </li>
+                    <li><button type="submit" class="cart"><span class="fa fa-cart-arrow-down carticon"></span></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="categories">
+        <div class="All-categories">
+            <ul>
+                <li> <select name="" id="">
+                        <option value="All categories">All categories</option>
+                        <option value="All categories">All categories</option>
+                        <option value="All categories">All categories</option>
+                        <option value="All categories">All categories</option>
+                        <option value="All categories">All categories</option>
+                        <option value="All categories">All categories</option>
+                        <option value="All categories">All categories</option>
+                        <option value="All categories">All categories</option>
+                        <option value="All categories">All categories</option>
+                        <option value="All categories">All categories</option>
+                        <option value="All categories">All categories</option>
+                        <option value="All categories">All categories</option>
+
+                    </select></li>
+            </ul>
+        </div>
+        <div class="cat-optn">
+            <ul>
+
+                <li>Home</li>
+                <li>About Us</li>
+                <li><select name="" id="">
+                        <option value="Kitchen">Kitchen</option>
+                        <option value="Kitchen">Kitchen</option>
+                        <option value="Kitchen">Kitchen</option>
+                        <option value="Kitchen">Kitchen</option>
+                        <option value="Kitchen">Kitchen</option>
+
+                    </select></li>
+                <li><select name="" id="">
+                        <option value="Household">Household</option>
+                        <option value="Household">Household</option>
+                        <option value="Household">Household</option>
+                        <option value="Household">Household</option>
+                        <option value="Household">Household</option>
+
+                    </select></li>
+                <li>Faqs</li>
+                <li><select name="" id="">
+                        <option value="Pages">Pages</option>
+                        <option value="Pages">Pages</option>
+                        <option value="Pages">Pages</option>
+                        <option value="Pages">Pages</option>
+                        <option value="Pages">Pages</option>
+                        <option value="Pages">Pages</option>
+
+                    </select></li>
+                <li>Contact</li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="maincontainer">
+        <div class="button">
+            <div class="prev-button">
+                <button class="prev glyphicon glyphicon-chevron-left" onclick="prev()"></button>
+            </div>
+            <div class="next-button">
+                <button class="next glyphicon glyphicon-chevron-right" onclick="next()"></button>
+            </div>
+        </div>
+        <div class="slide img1"></div>
+
+        <div class="slide img2"></div>
+        <div class="slide img3"></div>
+        <div class="slide img4"></div>
+    </div>
+
+    <div class="our-product">
+        <p>Our Top Products</p>
+        <hr>
+        <span class="rhombus1"></span>
+        <span class="rhombus2"></span>
+        <span class="rhombus3"></span>
+    </div>
+    <div class="items">
+        <div class="filter">
+            <ul>
+                <li class="heading">
+                    Search Here...
+                </li>
+                <li>
+                    <div class="product_search"> <input type="search" placeholder="Product Name...">
+                        <button class="glyphicon glyphicon-chevron-right"></button>
+                    </div>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li class="heading">
+                    Price Range
+                </li>
+                <li id="rangeDisplay">$0 - $9000</li>
+                <li><input id="range_slider" type="range" min="0" max="9000" onchange="changeRange(event)"></li>
+                <li>
+                    <hr>
+                </li>
+                <li class="heading">
+                    Food Preference
+                </li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>Vegitarian</span> </li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>Non-Vegtarian</span>
+                </li>
+                <li class="heading">Discount</li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>5% or More</span> </li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>10% or More</span> </li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>20% or More</span></li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>30% or More</span></li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>50% or More</span> </li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>60% or More</span> </li>
+                <li class="heading">Customer Review</li>
+                <li class="Star"><span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <p> 5.0</p>
+                </li>
+                <li class="Star"><span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star-o checked"></span>
+                    <p>4.0</p>
+                </li>
+                <li class="Star">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star-half-o checked"></span>
+                    <span class="fa fa-star-o checked"></span>
+                    <p>3.5</p>
+                </li>
+                <li class="Star">
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star-o checked"></span>
+                    <span class="fa fa-star-o checked"></span>
+                    <p>3.0</p>
+                </li>
+                <li class="Star">
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star-half-o checked"></span>
+                    <span class="fa fa-star-o checked"></span>
+                    <span class="fa fa-star-o checked"></span>
+                    <p>2.5</p>
+                </li>
+
+                <li class="heading">Cuisine</li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>South America</span>
+                </li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>French</span></li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>Greek</span></li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>Chinese</span></li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>Japanese</span></li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>Italian</span></li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>Mexico</span></li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>Thai</span></li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>Indian</span></li>
+                <li class="checkbox_label"><input class="checkbox_button" type="checkbox"><span>Spanish</span></li>
+                <li class="heading">Special Deals</li>
+                <li>
+                    <div class="Special-Deals">
+                        <div class="food-img">
+                            <img src="102745_13-lays-potato-chips-american-style-cream-onion-flavour.webp" alt="">
+
+                        </div>
+                        <div class="price">
+                            <p class="product-name">Lay's Potato Chips </p>
+                            <p class="item-price"> $18.00</p>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="Special-Deals">
+                        <div class="food-img">
+                            <img src="d1.jpg" alt="">
+
+                        </div>
+                        <div class="price">
+                            <p class="product-name">Bingo Mad Angles </p>
+                            <p class="item-price">$9.00</p>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="Special-Deals">
+                        <div class="food-img">
+                            <img src="d4.jpg" alt="">
+
+                        </div>
+                        <div class="price">
+                            <p class="product-name">Tata Salt </p>
+                            <p class="item-price"> $15.00/
+                            <p>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="Special-Deals">
+                        <div class="food-img">
+                            <img src="d5.jpg" alt="">
+
+                        </div>
+                        <div class="price">
+                            <p class="product-name">Gujarat Dry Fruits </p>
+                            <p class="item-price"> $525.00</p>
+                        </div>
+                    </div>
+
+                </li>
+                <li>
+                    <div class="Special-Deals">
+                        <div class="food-img">
+                            <img src="d3.jpg" alt="">
+
+                        </div>
+                        <div class="price">
+                            <p class="product-name">Cadbaury Dairy Milk </p>
+                            <p class="item-price"> $149.00</p>
+                        </div>
+                    </div>
+
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="fooditems">
+
+
+            <div class="item_title">
+                <p class="titles">Nuts</p>
+                <div class="nut_wrap wrap">
+                    <div class="Almonds gros_items">
+                        <img src="m1.jpg" alt="">
+                        <span class="new">NEW</span>
+
+                        <span class="food_name">
+                            <p>Almonds, 100g</p>
+                        </span>
+                        <p class="rate"><span>$149.00</span><span> <s>$280.00</s></span></p>
+                        <div class="add_to_cart">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="Almonds gros_items">
+                        <img src="m2.jpg" alt="">
+                        <span class="new">NEW</span>
+
+                        <span class="food_name">
+                            <p>Cashew Nuts, 100g
+                        </span></p>
+                        <p class="rate"><span>$200.00</span><span> <s>$420.00</s></span></p>
+                        <div class="add_to_cart">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="Almonds gros_items">
+                        <img src="m3.jpg" alt="">
+                        <span class="new">NEW</span>
+
+                        <span class="food_name">
+                            <p>Pista..., 250g</p>
+                        </span>
+                        <p class="rate"><span>$520.00</span><span> <s>$600.99</s></span></p>
+                        <div class="add_to_cart">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="pure_energy">
+                <div class="energy_text">
+                    <p>Pure Energy</p>
+                    <p>Enjoy our all healthy Products</p>
+                    <p>Get Extra 10% Off</p>
+                </div>
+                <div class="nuts_dryfruits">
+                    <p>Nuts & Dry Fruits</p>
+                </div>
+                <div class="dryfruits_img">
+                    <img src="nut1.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="item_title">
+                <p class="titles">Oils</p>
+                <div class="nut_wrap wrap">
+                    <div class="oil gros_items">
+                        <img class="oil1" src="mk4.jpg" alt="">
+                        <span class="new">NEW</span>
+
+                        <span class="food_name">
+                            <p>Freedom Oil, 1L</p>
+                        </span>
+                        <p class="rate"><span>$78.00</span><span> <s>$110.00</s></span></p>
+                        <div class="add_to_cart">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="oil gros_items">
+                        <img class="oil2" src="mk5.jpg" alt="">
+                        <span class="new">NEW</span>
+
+                        <span class="food_name">
+                            <p>Saffola Gold, 1L</p>
+                        </span>
+                        <p class="rate"><span>$130.00</span><span> <s>$150.00</s></span></p>
+                        <div class="add_to_cart">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="oil gros_items">
+                        <img class="oil3" src="mk6.jpg" alt="">
+                        <span class="new">NEW</span>
+
+                        <span class="food_name">
+                            <p>Fortune Oil, 1L</p>
+                        </span>
+                        <p class="rate"><span>$399.99</span><span> <s>$500.00</s></span></p>
+                        <div class="add_to_cart">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="item_title">
+                <p class="titles">Pasta & Noodles</p>
+                <div class="nut_wrap wrap">
+                    <div class="p&n gros_items">
+                        <img class="pnimg1" src="mk7.jpg" alt="">
+                        <span class="new">NEW</span>
+
+                        <span class="food_name">
+                            <p>Yippee Noodles, 65g</p>
+                        </span>
+                        <p class="rate"><span>$15.00</span><span> <s>$25.00</s></span></p>
+                        <div class="add_to_cart">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="p&n gros_items">
+                        <img class="pnimg2" src="mk8.jpg" alt="">
+                        <span class="new">NEW</span>
+
+                        <span class="food_name">
+                            <p>Wheat Pasta, 500g</p>
+                        </span>
+                        <p class="rate"><span>$98.00</span><span> <s>$120.00</s></span></p>
+                        <div class="add_to_cart">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="p&n gros_items">
+                        <img class="pnimg3" src="mk9.jpg" alt="">
+                        <span class="new">NEW</span>
+
+                        <span class="food_name">
+                            <p>Chinese Noodles, 68g</p>
+                        </span>
+                        <p class="rate"><span>$11.99</span><span> <s>$15.00</s></span></p>
+                        <div class="add_to_cart">
+                            <button>ADD TO CART</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    </div>
+    <div class="special_offer">
+        <h1>Special Offers</h1>
+        <hr>
+        <span class="rhombus4"></span>
+        <span class="rhombus5"></span>
+        <span class="rhombus6"></span>
+
+    </div>
+    <div class="product_slider">
+        <button class="slide_btn"  onclick="scrolll()"><</button>
+        <div class="product_list">
+            <div class="product">
+                <div class="product_img"><img src="s8.jpg" alt="">
+                </div>
+                <div class="product_detials">
+                    <p>Cadbaury Choclairs, 655.5g</p>
+                    <p>$160.00</p>
+                    <p>Save $40.00</p>
+                </div>
+                <div class="add_to_cart">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product_img"><img src="s8.jpg" alt="">
+                </div>
+                <div class="product_detials">
+                    <p>Cadbaury Choclairs, 655.5g</p>
+                    <p>$160.00</p>
+                    <p>Save $40.00</p>
+                </div>
+                <div class="add_to_cart">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product_img"><img src="s8.jpg" alt="">
+                </div>
+                <div class="product_detials">
+                    <p>Cadbaury Choclairs, 655.5g</p>
+                    <p>$160.00</p>
+                    <p>Save $40.00</p>
+                </div>
+                <div class="add_to_cart">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product_img"><img src="s8.jpg" alt="">
+                </div>
+                <div class="product_detials">
+                    <p>Cadbaury Choclairs, 655.5g</p>
+                    <p>$160.00</p>
+                    <p>Save $40.00</p>
+                </div>
+                <div class="add_to_cart">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product_img"><img src="s8.jpg" alt="">
+                </div>
+                <div class="product_detials">
+                    <p>Cadbaury Choclairs, 655.5g</p>
+                    <p>$160.00</p>
+                    <p>Save $40.00</p>
+                </div>
+                <div class="add_to_cart">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product_img"><img src="s8.jpg" alt="">
+                </div>
+                <div class="product_detials">
+                    <p>Cadbaury Choclairs, 655.5g</p>
+                    <p>$160.00</p>
+                    <p>Save $40.00</p>
+                </div>
+                <div class="add_to_cart">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+        <button class="slide_btn"  onclick="scrollr()">></button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
