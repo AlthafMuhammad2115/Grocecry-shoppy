@@ -254,7 +254,7 @@ body {
 }
 
 .img1 {
-    background-image: url("pexels-caio-64613.jpg");
+    background-image: url("images/pexels-caio-64613.jpg");
     background-size: 1300px;
 
 }
@@ -262,18 +262,18 @@ body {
 
 
 .img2 {
-    background-image: url("pexels-maria-orlova-4916298.jpg");
+    background-image: url("images/pexels-maria-orlova-4916298.jpg");
     background-size: 1300px;
 
 }
 
 .img3 {
-    background-image: url("pexels-matheus-cenali-2733918.jpg");
+    background-image: url("images/pexels-matheus-cenali-2733918.jpg");
     background-size: 1300px;
 }
 
 .img4 {
-    background-image: url("pexels-pixabay-264636.jpg");
+    background-image: url("images/pexels-pixabay-264636.jpg");
     background-size: 1300px;
 }
 .maincontainer .button{
@@ -575,7 +575,7 @@ body {
     width: 100%;
     height: 424px;
     margin: 14px 0px;
-    background-image: url('bg1.jpg');
+    background-image: url('images/bg1.jpg');
     background-attachment: fixed;
     -webkit-background-size: cover;
     display: flex;
